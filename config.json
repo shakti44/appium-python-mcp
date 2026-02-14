@@ -1,0 +1,1 @@
+{\n  "deviceName": "Android Emulator",\n  "platformName": "Android",\n  "app": "path/to/app.apk",\n  "automationName": "UiAutomator2"\n}
