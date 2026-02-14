@@ -1,0 +1,41 @@
+devices:
+  android_emulators:
+    - name: "Pixel_5_API_30"
+      udid: "emulator-5554"
+      platform: "Android"
+      version: "11.0"
+      available: true
+    - name: "Pixel_6_API_33"
+      udid: "emulator-5556"
+      platform: "Android"
+      version: "13.0"
+      available: true
+  
+  ios_simulators:
+    - name: "iPhone 14"
+      udid: "auto"
+      platform: "iOS"
+      version: "16.0"
+      available: true
+    - name: "iPhone 14 Pro"
+      udid: "auto"
+      platform: "iOS"
+      version: "16.0"
+      available: true
+  
+  real_devices:
+    - name: "Samsung Galaxy S21"
+      udid: ""
+      platform: "Android"
+      version: "12.0"
+      available: false
+    - name: "iPhone 13"
+      udid: ""
+      platform: "iOS"
+      version: "15.0"
+      available: false
+
+discovery:
+  auto_detect: true
+  prefer_real_devices: false
+  timeout_seconds: 30
