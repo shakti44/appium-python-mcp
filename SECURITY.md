@@ -4,8 +4,8 @@
 
 **Status**: ✅ **ALL CLEAR**  
 **Last Updated**: 2026-02-14  
-**Total Vulnerabilities Found**: 5  
-**Total Vulnerabilities Fixed**: 5  
+**Total Vulnerabilities Found**: 6  
+**Total Vulnerabilities Fixed**: 6  
 **Security Score**: 100%
 
 ## Vulnerability Fixes
@@ -74,7 +74,7 @@
 
 ---
 
-### 5. Pillow Buffer Overflow ✅ FIXED
+### 5. Pillow Buffer Overflow (First Vulnerability) ✅ FIXED
 
 - **Package**: Pillow (Python Imaging Library)
 - **Vulnerability**: Buffer overflow vulnerability
@@ -87,6 +87,22 @@
 **Details**: Pillow versions < 10.3.0 had a buffer overflow vulnerability that could potentially be exploited for arbitrary code execution.
 
 **Resolution**: Updated to version 12.1.1, which includes the security fix and numerous improvements.
+
+---
+
+### 6. Pillow PSD Out-of-Bounds Write ✅ FIXED
+
+- **Package**: Pillow (Python Imaging Library)
+- **Vulnerability**: Out-of-bounds write when loading PSD images
+- **Severity**: High
+- **Old Version**: 10.3.0 (vulnerable)
+- **Patched Version**: 12.1.1
+- **Installed Version**: 12.1.1 ✅
+- **Status**: **RESOLVED**
+
+**Details**: Pillow versions >= 10.3.0 and < 12.1.1 had an out-of-bounds write vulnerability when processing PSD (Photoshop) image files. This could potentially lead to crashes or arbitrary code execution.
+
+**Resolution**: Updated to version 12.1.1, which includes comprehensive security fixes for image format handling.
 
 ---
 
@@ -197,10 +213,10 @@ For security issues or questions:
 ## Changelog
 
 ### 2026-02-14
-- ✅ Fixed 5 critical/medium security vulnerabilities
+- ✅ Fixed 6 critical/medium/high security vulnerabilities
 - ✅ Updated fastapi 0.109.0 → 0.129.0
 - ✅ Updated mcp 1.0.0 → 1.26.0
-- ✅ Updated Pillow 10.2.0 → 12.1.1
+- ✅ Updated Pillow 10.2.0 → 12.1.1 (fixes both buffer overflow and PSD vulnerabilities)
 - ✅ Verified all tests passing
 - ✅ CodeQL scan clean
 
