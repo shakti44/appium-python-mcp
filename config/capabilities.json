@@ -1,0 +1,44 @@
+{
+  "android": {
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
+    "platformVersion": "11.0",
+    "newCommandTimeout": 300,
+    "autoGrantPermissions": true,
+    "noReset": false,
+    "fullReset": false
+  },
+  "ios": {
+    "platformName": "iOS",
+    "automationName": "XCUITest",
+    "deviceName": "iPhone 14",
+    "platformVersion": "16.0",
+    "newCommandTimeout": 300,
+    "autoAcceptAlerts": false,
+    "autoDismissAlerts": false,
+    "noReset": false,
+    "fullReset": false
+  },
+  "android_real_device": {
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Real Device",
+    "newCommandTimeout": 300,
+    "autoGrantPermissions": true,
+    "noReset": true,
+    "fullReset": false,
+    "adbExecTimeout": 60000
+  },
+  "ios_real_device": {
+    "platformName": "iOS",
+    "automationName": "XCUITest",
+    "deviceName": "Real Device",
+    "newCommandTimeout": 300,
+    "udid": "",
+    "xcodeOrgId": "",
+    "xcodeSigningId": "iPhone Developer",
+    "noReset": true,
+    "fullReset": false
+  }
+}
